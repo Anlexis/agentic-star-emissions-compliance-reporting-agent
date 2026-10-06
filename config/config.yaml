@@ -1,0 +1,11 @@
+# Runtime parameters — loaded by AgentRegistry, passed as Graph(config=...).
+# Separate from config/agent.yaml (the static manifest).
+
+max_retry: 3
+timeout_s: 30
+llm:
+  system_prompt_template: "prompts/emissions_report.j2"
+  temperature: 0.0
+  max_tokens: 6000
+security:
+  s3_gate_enabled: true
